@@ -6,17 +6,18 @@
     <title>Flexbox</title>
     <style>
         .movie-profile{
-            height: 400px;
+            height: 450px;
             width: 100%;
             display: flex;
+           
+            background-color: #F1E5D1;
             
             padding: 5px;
             border-radius: 5px;
-            justify-content: center;
-            justify-content: space-between;
             padding-top: 20px;
             padding-right: 50px;
-            background-image: url(https://img.freepik.com/free-photo/vivid-blurred-colorful-wallpaper-background_58702-3798.jpg?w=740&t=st=1717230211~exp=1717230811~hmac=75e833c47c6e295b233ff3590f3be70b86be555578d7e44c4092c47c838f2b9a)
+            justify-content: space-evenly;
+            
            
             
             
@@ -28,22 +29,30 @@
             width: 200px;
             padding-left: 20px;
             padding-right: 20px;
+            padding-top: 20px;
+            justify-content: space-around;
         }
         .movie1{
             text-align: center;
             font-size: larger;
             font-family: cursive;
             border-radius: 3px;
-            border-color: #5AB2FF;
-            height: 300px;
-            width: 350px;
+            
+            background-color: #4D869C;
+            height: 400px;
+            width: 300px;
             justify-content: space-between;
+            flex-direction: row;
+            border-radius: 10px;
+            border: solid #7AB2B2;
+           
+           
         }
         .img:hover{
             transition: 1s;
             transform: scale(1.1);
-            box-shadow: 2px 3px 2px 3px;
-            border-color: #5AB2FF;
+            
+            
             
         
         
@@ -54,10 +63,13 @@
         .btn{
             border-radius: 2px;
             border: none;
-            background-color: #5AB2FF;
+            background-color: #7AB2B2;
             height: 40px;
             width: 85px;
             color: black;
+            justify-content: center;
+            padding-bottom: 10px;
+            align-items: center;
         }
         .btn:hover{
             transition: 1s;
@@ -74,9 +86,12 @@
 </head>
 <body>
     <div class="movie-profile">
-       <div class="movie1"><img src="https://upload.wikimedia.org/wikipedia/en/6/6b/WildCard.2015.png" class="img"><h3 class="h3">Wild Card</h3><button class="btn">Book Now</button></div>
-        <div class="movie1"><img src="https://m.media-amazon.com/images/M/MV5BNmM4NGNlYTMtODJkNy00MzJiLWJlMDUtZWI1MjA4MDFiZDg2XkEyXkFqcGdeQXVyMTYxNTQyNzI3._V1_.jpg" class="img"><h3 class="h3">THE BLACK CARD</h3><button class="btn">Book Now</button></div>
-        <div class="movie1"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRrZCE36G_CXAALu0ivp74z5JpdWI_viAoBOw&s" class="img"><h3 class="h3">JOKER</h3><button class="btn">Book now</button></div>
+       <div class="movie1">
+        <img src="https://upload.wikimedia.org/wikipedia/en/6/6b/WildCard.2015.png" class="img"><h3 class="h3">Wild Card</h3><button class="btn">Book Now</button></div>
+        <div class="movie1">
+            <img src="https://m.media-amazon.com/images/M/MV5BNmM4NGNlYTMtODJkNy00MzJiLWJlMDUtZWI1MjA4MDFiZDg2XkEyXkFqcGdeQXVyMTYxNTQyNzI3._V1_.jpg" class="img"><h3 class="h3">THE BLACK CARD</h3><button class="btn">Book Now</button></div>
+        <div class="movie1">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRrZCE36G_CXAALu0ivp74z5JpdWI_viAoBOw&s" class="img"><h3 class="h3">JOKER</h3><button class="btn">Book now</button></div>
     </div>
     
 </body>
